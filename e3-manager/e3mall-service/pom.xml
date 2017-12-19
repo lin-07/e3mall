@@ -49,4 +49,5 @@
 			<artifactId>spring-context-support</artifactId>
 		</dependency>
 	</dependencies>
+	<packaging>war</packaging>
 </project>
