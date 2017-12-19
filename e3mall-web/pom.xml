@@ -9,10 +9,34 @@
 	<artifactId>e3-web</artifactId>
 	<packaging>war</packaging>
 	<dependencies>
+		<!-- Spring -->
 		<dependency>
-			<groupId>e3.mall</groupId>
-			<artifactId>e3mall-service</artifactId>
-			<version>0.0.1-SNAPSHOT</version>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-beans</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-aspects</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jms</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context-support</artifactId>
 		</dependency>
 		<!-- JSP相关 -->
 		<dependency>
@@ -29,8 +53,18 @@
 			<artifactId>jsp-api</artifactId>
 			<scope>provided</scope>
 		</dependency>
+		<dependency>
+			<groupId>e3.mall</groupId>
+			<artifactId>e3mall-interface</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>e3.mall</groupId>
+			<artifactId>e3-common</artifactId>
+			<version>0.0.1-SNAPSHOT</version>
+		</dependency>
 	</dependencies>
-	 <build>
+	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.tomcat.maven</groupId>
@@ -41,5 +75,5 @@
 				</configuration>
 			</plugin>
 		</plugins>
-	</build> 
+	</build>
 </project>
