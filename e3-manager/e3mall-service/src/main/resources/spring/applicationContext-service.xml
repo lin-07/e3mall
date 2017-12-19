@@ -13,6 +13,6 @@
 	
 	<dubbo:application name="e3-manager"/>
 	<dubbo:registry protocol="zookeeper" address="192.168.206.128:2183"></dubbo:registry>
-	<dubbo:protocol name="dubbo" port="2000"/>
+	<dubbo:protocol name="dubbo" port="20000"/>
 	<dubbo:service interface="cn.e3mall.service.TbItemService" ref="tbItemServiceImpl"/>
 </beans>
