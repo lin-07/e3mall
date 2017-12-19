@@ -12,7 +12,7 @@
 		<module>e3mall-dao</module>
 		<module>e3mall-pojo</module>
 		<module>e3mall-interface</module>
-		<module>e3mall-web</module>
+		<module>e3mall-service</module>
 	</modules>
 	<dependencies>
 		<dependency>
