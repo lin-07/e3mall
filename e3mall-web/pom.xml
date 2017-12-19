@@ -3,10 +3,10 @@
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>e3.mall</groupId>
-		<artifactId>e3-manager</artifactId>
+		<artifactId>e3-parent</artifactId>
 		<version>0.0.1-SNAPSHOT</version>
 	</parent>
-	<artifactId>e3mall-web</artifactId>
+	<artifactId>e3-web</artifactId>
 	<packaging>war</packaging>
 	<dependencies>
 		<dependency>
