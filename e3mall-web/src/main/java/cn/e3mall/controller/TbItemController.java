@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
+import cn.e3mall.pojo.DatagridResult;
 import cn.e3mall.pojo.TbItem;
 import cn.e3mall.service.TbItemService;
 @Controller
@@ -18,6 +19,13 @@ public class TbItemController {
 	@ResponseBody
 	public TbItem findById(@PathVariable Long itemId){
 		return itemService.findById(itemId);
+	}
+	
+	@RequestMapping("/item/list")
+	@ResponseBody
+	public DatagridResult findAll(int page,int rows){
+		DatagridResult result = itemService.findAll(page, rows);
+		return result;
 	}
 	
 }
